@@ -43,7 +43,7 @@ T TPQueue<T>::pop() {
     }
     return result;
   }
- return 0;
+  return 0;
 }
 
 template<typename T>
