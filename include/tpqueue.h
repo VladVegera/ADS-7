@@ -1,6 +1,7 @@
 // Copyright 2022 NNTU-CS
 #ifndef INCLUDE_TPQUEUE_H_
 #define INCLUDE_TPQUEUE_H_
+#include <string>
 
 template<typename T>
 class TPQueue {
@@ -42,8 +43,9 @@ T TPQueue<T>::pop() {
       tail = nullptr;
     }
     return result;
+  } else {
+    throw std::string("List is empty!");
   }
-  return 0;
 }
 
 template<typename T>
